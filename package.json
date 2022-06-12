@@ -1,0 +1,17 @@
+{
+  "name": "hw-5",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node script.js",
+    "pushToGit" : "git init && git add . && git commit -m \"hw-5\" && git branch -M main && git remote add origin https://github.com/ST-17/nfactorial-homework-0610-npm-storages.git && git push -u origin main"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^5.0.1"
+  }
+}

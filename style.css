@@ -1,0 +1,57 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+body .light{
+    background-color: white;
+}
+body .dark{
+    background-color: black;
+}
+.btn-theme{
+    position: absolute;
+    top: 20px;
+    left: 45%;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: black;
+    color: white;
+}
+
+.btn-cookie{
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    font-size: 20px;
+    cursor: pointer;
+    background-color: brown;
+    color: white;
+}
+.main{
+    width: 800px;
+    margin: 0 auto;
+    padding: 150px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.main-2{
+    width: 800px;
+    margin: 0 auto;
+}
+.main img{
+    width: 300px;
+}
+.text{
+    width: 60%;
+}
+.des{
+    font-size: 23px;
+}

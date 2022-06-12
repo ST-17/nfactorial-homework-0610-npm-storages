@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+    <script>
+        function setTheme(){
+            let theme = localStorage.getItem("theme")
+            if(theme == "dark"){
+                localStorage.setItem("theme","light")
+                const root = document.getElementById("container")
+                root.className = "light"
+                document.getElementById("text").style.color = "black"
+                document.getElementById("main-2").style.color = "black"
+                document.getElementById("btn-theme").style.color = "white"
+                document.getElementById("btn-theme").style.background = "black"
+            }else{
+                localStorage.setItem("theme","dark")
+                const root = document.getElementById("container")
+                root.className = "dark"
+                document.getElementById("text").style.color = "white"
+                document.getElementById("main-2").style.color = "white"
+                document.getElementById("btn-theme").style.color = "black"
+                document.getElementById("btn-theme").style.background = "white"
+            }
+        }
+        function setCookie(){
+            document.cookie = "user=Samat; expires=Tru, 19 Jan 2038 03:14:07 GMT"
+        }
+        function getValue(){
+            const theme = localStorage.getItem("theme")
+            const root = document.getElementById("container")
+            root.className = theme
+        }
+    </script>
+<body onload="getValue()">
+    <div id="container" style="width: 100%; height: 100%;">
+        <button id="btn-theme" class="btn-theme" onclick="setTheme()">Change Theme</button>
+        <button id="btn-cookie" class="btn-cookie" onclick="setCookie()">Cookie</button>
+        <div class="main">
+            <img src="https://images.unsplash.com/photo-1589802829985-817e51171b92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8N3x8fGVufDB8fHx8&w=1000&q=80" alt="">
+            <div class="text" id="text">
+                <h1 class="title">Mountain</h1>
+                <p class="des">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laborum sunt veniam unde corrupti, autem omnis saepe praesentium dolores possimus cupiditate quasi nisi eveniet nulla delectus eos voluptates vero officiis?</p>
+            </div>
+        </div>
+        <h2 class="main-2" id="main-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati aliquam sit earum. Quidem, omnis autem suscipit obcaecati doloremque, numquam consequuntur laboriosam sapiente et voluptate excepturi tempora ipsam sed. Veniam, expedita.
+        Beatae culpa voluptatem quae a, reprehenderit animi cum quam ea atque voluptate blanditiis optio veniam dolore vitae nostrum alias rem aperiam voluptatibus? Similique molestias illo expedita voluptate aut autem voluptatibus?
+        Assumenda nisi officiis delectus eius corrupti molestias obcaecati nostrum quis aut fugiat, odio necessitatibus explicabo repudiandae harum quos iste eveniet esse, deleniti ipsa qui similique laborum blanditiis dolor! Quas, quasi.
+        Iusto illo sunt iste culpa incidunt tempora aliquid a illum, debitis sint placeat id numquam quos praesentium fuga accusamus totam error distinctio similique? Deleniti maiores sunt, quia numquam exercitationem ullam?
+        Eveniet, aliquid in fugit iusto aspernatur quisquam enim? Maxime officiis natus pariatur ducimus doloribus quas dolorem quo facere, rem eaque fugiat voluptates, enim in nisi, quisquam quia dolor quod delectus?
+        Repellendus, illum animi! Quidem reiciendis ipsa totam voluptate eaque eius minus neque esse illo aspernatur ex perspiciatis id aliquid ad accusantium voluptatum corporis recusandae, quo vel, similique doloribus quam ea.
+        Alias aspernatur facilis voluptate atque perspiciatis cum laudantium quasi praesentium eius quo excepturi quibusdam, ex laborum tempora perferendis nobis adipisci dolore asperiores recusandae error magni. Eligendi obcaecati porro error expedita.
+        Expedita optio id obcaecati quam, aliquam rerum nulla eum veniam quas minus eos, ex necessitatibus distinctio quidem libero officiis nam consequuntur nesciunt, error minima! Modi earum deserunt voluptate illum molestiae.
+        Consequatur velit, vel omnis fugit voluptatibus fuga, nisi facere delectus quia perferendis reiciendis ipsam eveniet ab! Corporis vitae, id autem qui, nostrum adipisci, dolores rem beatae dolorum voluptate fuga pariatur!
+        Itaque porro dolore nam est veniam, veritatis consequatur quod magni aliquid quibusdam mollitia laborum, aperiam, fuga ex. Voluptas dolor pariatur itaque nobis aut voluptate rem sed minima. A, tempora facilis?</h4>
+    </div>
+</body>
+</html>
